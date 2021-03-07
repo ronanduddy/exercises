@@ -5,6 +5,10 @@ my_proc.('ronan')
 my_proc['ronan']
 my_proc.==='ronan'
 
+# another syntax
+bye = proc { |name| puts "goodbye #{name}" }
+bye.call('bob')
+
 # Possible to check if a proc is a lambda as a lambda is just a special proc
 # object:
 lambda_checker = ->(obj) { puts "is proc a lambda? #{obj.lambda?}" }

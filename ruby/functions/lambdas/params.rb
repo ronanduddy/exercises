@@ -27,3 +27,7 @@ printer(&procy_lambda)
 x = 2
 my_lambda = -> { return 1 if x == 2 }
 puts "Lambda result: #{my_lambda.call}"
+
+# alternative approach below for above
+my_other_lambda = -> num { return 1 if num == 2 }
+puts "Other lambda result: #{my_other_lambda.call(1)}"
